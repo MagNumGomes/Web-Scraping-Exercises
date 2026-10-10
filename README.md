@@ -11,7 +11,7 @@ Cada exercício foi organizado em sua respectiva pasta, contendo:
 ## Como Executar
 
 ### 1. Iniciar o servidor HTTP local
-Abra o terminal na pasta raiz do projeto (`Nova pasta`) e execute o comando indicado nas orientações da lista:
+Abra o terminal na pasta raiz do projeto e execute o comando indicado nas orientações da lista:
 
 ```bash
 python -m http.server --bind 127.0.0.1 8000
