@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo da Biblioteca Municipal</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #fdfaf6; margin: 25px; line-height: 1.6; color: #333; }
+        h1 { text-align: center; color: #5a3825; font-size: 2rem; }
+        .catalogo-livros { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        .livro { background: #ffffff; border: 1px solid #e0d7ce; border-radius: 6px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .livro-titulo { color: #8b0000; margin-top: 0; font-size: 1.4rem; }
+        .livro-detalhes p { margin: 4px 0; font-family: Arial, sans-serif; font-size: 0.95rem; }
+        .status-badge { font-weight: bold; padding: 2px 8px; border-radius: 3px; }
+        .status-disponivel { background-color: #d1e7dd; color: #0f5132; }
+        .status-emprestado { background-color: #f8d7da; color: #842029; }
+        .palavras-chave-container { margin-top: 10px; font-family: Arial, sans-serif; }
+        .palavras-chave { list-style-type: square; padding-left: 20px; margin-top: 5px; }
+        .palavras-chave li { font-size: 0.9rem; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Acervo da Biblioteca Central</h1>
+    <div class="catalogo-livros">
+        <!-- Livro 1 -->
+        <article class="livro">
+            <h2 class="livro-titulo">O Programador Pragmático</h2>
+            <div class="livro-detalhes">
+                <p><strong>Autor:</strong> <span class="livro-autor">Andrew Hunt e David Thomas</span></p>
+                <p><strong>Ano de Publicação:</strong> <span class="livro-ano">1999</span></p>
+                <p><strong>Gênero:</strong> <span class="livro-genero">Tecnologia / Engenharia de Software</span></p>
+                <p><strong>Situação de Empréstimo:</strong> <span class="livro-status status-disponivel">Disponível</span></p>
+            </div>
+            <div class="palavras-chave-container">
+                <strong>Palavras-chave:</strong>
+                <ul class="palavras-chave">
+                    <li>Engenharia de Software</li>
+                    <li>Boas Práticas de Código</li>
+                    <li>Desenvolvimento Profissional</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Livro 2 -->
+        <article class="livro">
+            <h2 class="livro-titulo">1984</h2>
+            <div class="livro-detalhes">
+                <p><strong>Autor:</strong> <span class="livro-autor">George Orwell</span></p>
+                <p><strong>Ano de Publicação:</strong> <span class="livro-ano">1949</span></p>
+                <p><strong>Gênero:</strong> <span class="livro-genero">Ficção Distópica</span></p>
+                <p><strong>Situação de Empréstimo:</strong> <span class="livro-status status-emprestado">Emprestado</span></p>
+            </div>
+            <div class="palavras-chave-container">
+                <strong>Palavras-chave:</strong>
+                <ul class="palavras-chave">
+                    <li>Totalitarismo</li>
+                    <li>Vigilância e Controle</li>
+                    <li>Distopia Política</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Livro 3 -->
+        <article class="livro">
+            <h2 class="livro-titulo">Entendendo Algoritmos</h2>
+            <div class="livro-detalhes">
+                <p><strong>Autor:</strong> <span class="livro-autor">Aditya Y. Bhargava</span></p>
+                <p><strong>Ano de Publicação:</strong> <span class="livro-ano">2016</span></p>
+                <p><strong>Gênero:</strong> <span class="livro-genero">Ciência da Computação</span></p>
+                <p><strong>Situação de Empréstimo:</strong> <span class="livro-status status-disponivel">Disponível</span></p>
+            </div>
+            <div class="palavras-chave-container">
+                <strong>Palavras-chave:</strong>
+                <ul class="palavras-chave">
+                    <li>Algoritmos e Lógica</li>
+                    <li>Estruturas de Dados</li>
+                    <li>Guia Ilustrado</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Livro 4 -->
+        <article class="livro">
+            <h2 class="livro-titulo">Sapiens: Uma Breve História da Humanidade</h2>
+            <div class="livro-detalhes">
+                <p><strong>Autor:</strong> <span class="livro-autor">Yuval Noah Harari</span></p>
+                <p><strong>Ano de Publicação:</strong> <span class="livro-ano">2014</span></p>
+                <p><strong>Gênero:</strong> <span class="livro-genero">História e Antropologia</span></p>
+                <p><strong>Situação de Empréstimo:</strong> <span class="livro-status status-emprestado">Emprestado</span></p>
+            </div>
+            <div class="palavras-chave-container">
+                <strong>Palavras-chave:</strong>
+                <ul class="palavras-chave">
+                    <li>Evolução Humana</li>
+                    <li>Revolução Cognitiva</li>
+                    <li>História da Civilização</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
+

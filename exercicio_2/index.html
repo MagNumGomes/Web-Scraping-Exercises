@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Informática - TechStore</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f9; }
+        h1 { color: #333; text-align: center; }
+        .catalogo-produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+        .produto { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .produto-nome { font-size: 1.2rem; color: #0056b3; margin-top: 0; }
+        .produto-info { margin: 6px 0; color: #444; }
+        .produto-preco { font-size: 1.1rem; font-weight: bold; color: #28a745; margin: 10px 0; }
+        .estoque { font-weight: bold; padding: 3px 8px; border-radius: 4px; display: inline-block; font-size: 0.85rem; }
+        .estoque-disponivel { background-color: #d4edda; color: #155724; }
+        .estoque-baixo { background-color: #fff3cd; color: #856404; }
+        .estoque-indisponivel { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>Catálogo TechStore - Produtos de Informática</h1>
+    <div class="catalogo-produtos">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <h2 class="produto-nome">Notebook Inspiron 15</h2>
+            <p class="produto-info"><strong>Fabricante:</strong> <span class="fabricante">Dell</span></p>
+            <p class="produto-info"><strong>Categoria:</strong> <span class="categoria">Computadores</span></p>
+            <p class="produto-preco">R$ 4.299,00</p>
+            <p class="produto-info"><strong>Situação:</strong> <span class="situacao-estoque estoque-disponivel">Disponível</span></p>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <h2 class="produto-nome">Teclado Mecânico MX Keys</h2>
+            <p class="produto-info"><strong>Fabricante:</strong> <span class="fabricante">Logitech</span></p>
+            <p class="produto-info"><strong>Categoria:</strong> <span class="categoria">Periféricos</span></p>
+            <p class="produto-preco">R$ 549,90</p>
+            <p class="produto-info"><strong>Situação:</strong> <span class="situacao-estoque estoque-baixo">Estoque baixo</span></p>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <h2 class="produto-nome">Monitor UltraWide 29"</h2>
+            <p class="produto-info"><strong>Fabricante:</strong> <span class="fabricante">LG</span></p>
+            <p class="produto-info"><strong>Categoria:</strong> <span class="categoria">Monitores</span></p>
+            <p class="produto-preco">R$ 1.199,00</p>
+            <p class="produto-info"><strong>Situação:</strong> <span class="situacao-estoque estoque-disponivel">Disponível</span></p>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <h2 class="produto-nome">Placa de Vídeo GeForce RTX 4070</h2>
+            <p class="produto-info"><strong>Fabricante:</strong> <span class="fabricante">ASUS</span></p>
+            <p class="produto-info"><strong>Categoria:</strong> <span class="categoria">Hardware</span></p>
+            <p class="produto-preco">R$ 4.199,99</p>
+            <p class="produto-info"><strong>Situação:</strong> <span class="situacao-estoque estoque-indisponivel">Indisponível</span></p>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="produto">
+            <h2 class="produto-nome">Mouse Sem Fio MX Master 3S</h2>
+            <p class="produto-info"><strong>Fabricante:</strong> <span class="fabricante">Logitech</span></p>
+            <p class="produto-info"><strong>Categoria:</strong> <span class="categoria">Periféricos</span></p>
+            <p class="produto-preco">R$ 489,00</p>
+            <p class="produto-info"><strong>Situação:</strong> <span class="situacao-estoque estoque-disponivel">Disponível</span></p>
+        </div>
+    </div>
+</body>
+</html>
+

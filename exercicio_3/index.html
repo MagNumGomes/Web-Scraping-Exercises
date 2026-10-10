@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal InfoNews - Notícias em Tempo Real</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f7f9fc; margin: 20px; line-height: 1.5; }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { color: #1a202c; }
+        .feed-noticias { display: flex; flex-direction: column; gap: 20px; max-width: 800px; margin: 0 auto; }
+        .noticia { background: #ffffff; border-left: 5px solid #3182ce; border-radius: 4px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .noticia-categoria { display: inline-block; background-color: #ebf8ff; color: #2b6cb0; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; }
+        .noticia-titulo { font-size: 1.4rem; color: #2d3748; margin: 10px 0 5px 0; }
+        .noticia-metadados { font-size: 0.85rem; color: #718096; margin-bottom: 12px; }
+        .noticia-resumo { color: #4a5568; font-size: 1rem; margin: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal InfoNews</h1>
+        <p>Principais notícias e destaques do dia</p>
+    </header>
+
+    <main class="feed-noticias">
+        <!-- Notícia 1 -->
+        <article class="noticia">
+            <span class="noticia-categoria">Tecnologia</span>
+            <h2 class="noticia-titulo">Avanços em Modelos de Linguagem Transformam a Indústria de Software</h2>
+            <div class="noticia-metadados">
+                Publicado em <time datetime="2026-10-10" class="noticia-data">10/10/2026</time> por <span class="noticia-autor">Lucas Vasconcelos</span>
+            </div>
+            <p class="noticia-resumo">Novas plataformas de inteligência artificial oferecem suporte a código com contexto ampliado e raciocínio multi-etapa, elevando a produtividade das equipes.</p>
+        </article>
+
+        <!-- Notícia 2 -->
+        <article class="noticia">
+            <span class="noticia-categoria">Ciência</span>
+            <h2 class="noticia-titulo">Telescópio Espacial Detecta Atmosfera Rica em Vapor de Água em Exoplaneta</h2>
+            <div class="noticia-metadados">
+                Publicado em <time datetime="2026-10-09" class="noticia-data">09/10/2026</time> por <span class="noticia-autor">Mariana Silveira</span>
+            </div>
+            <p class="noticia-resumo">Astrônomos confirmaram dados espectrais revelando condições atmosféricas surpreendentes em planeta orbitando uma estrela a 120 anos-luz.</p>
+        </article>
+
+        <!-- Notícia 3 -->
+        <article class="noticia">
+            <span class="noticia-categoria">Tecnologia</span>
+            <h2 class="noticia-titulo">Mercado de Computação em Nuvem Registra Crescimento Recorde no Brasil</h2>
+            <div class="noticia-metadados">
+                Publicado em <time datetime="2026-10-07" class="noticia-data">07/10/2026</time> por <span class="noticia-autor">Gabriel Nogueira</span>
+            </div>
+            <p class="noticia-resumo">Investimentos em infraestrutura de datacenters sustentáveis impulsionam a modernização de órgãos públicos e empresas privadas.</p>
+        </article>
+
+        <!-- Notícia 4 -->
+        <article class="noticia">
+            <span class="noticia-categoria">Economia</span>
+            <h2 class="noticia-titulo">Taxas de Juros Globais Apresentam Estabilidade Após Reunião de Bancos Centrais</h2>
+            <div class="noticia-metadados">
+                Publicado em <time datetime="2026-10-05" class="noticia-data">05/10/2026</time> por <span class="noticia-autor">Renata Meireles</span>
+            </div>
+            <p class="noticia-resumo">Mercados financeiros reagiram positivamente à manutenção das taxas em um cenário de inflação controlada nas principais potências.</p>
+        </article>
+    </main>
+</body>
+</html>
+

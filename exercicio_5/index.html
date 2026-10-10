@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Bistrô & Sabor</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #faf8f5; margin: 30px; color: #2d3436; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { font-size: 2.2rem; color: #d63031; margin-bottom: 5px; }
+        .subtitulo { color: #636e72; font-style: italic; }
+        .cardapio { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+        .secao-cardapio { background: #fff; padding: 25px; border-radius: 8px; border: 1px solid #dfe6e9; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .categoria-titulo { color: #2d3436; border-bottom: 2px solid #e17055; padding-bottom: 8px; margin-top: 0; }
+        .lista-itens { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+        .item-prato { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 10px; border-bottom: 1px dashed #e2e8f0; }
+        .item-prato:last-child { border-bottom: none; }
+        .item-detalhes { flex: 1; padding-right: 15px; }
+        .item-nome { font-weight: bold; font-size: 1.1rem; color: #2d3436; }
+        .item-descricao { color: #636e72; font-size: 0.9rem; margin: 4px 0 0 0; }
+        .item-preco { font-weight: bold; color: #d63031; font-size: 1.05rem; white-space: nowrap; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bistrô & Sabor</h1>
+        <p class="subtitulo">Gastronomia artesanal e ingredientes selecionados</p>
+    </header>
+
+    <main class="cardapio">
+        <!-- Seção 1: Pratos -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Pratos</h2>
+            <div class="lista-itens">
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Risoto de Cogumelos Silvestres</span>
+                        <p class="item-descricao">Arroz arbóreo com mix de cogumelos frescos, manteiga trufada e parmesão ralado na hora.</p>
+                    </div>
+                    <span class="item-preco">R$ 58,00</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Filé Mignon ao Molho Gorgonzola</span>
+                        <p class="item-descricao">Tornedor de filé grelhado, servido com redução de queijo gorgonzola e batatas rústicas ao alecrim.</p>
+                    </div>
+                    <span class="item-preco">R$ 74,00</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Salmão com Crosta de Ervas</span>
+                        <p class="item-descricao">Posta de salmão grelhada sobre cama de purê de mandioquinha e legumes salteados.</p>
+                    </div>
+                    <span class="item-preco">R$ 68,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Bebidas -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Bebidas</h2>
+            <div class="lista-itens">
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Suco Natural de Frutas Vermelhas</span>
+                        <p class="item-descricao">Morango, amora e framboesa batidos na hora com hortelã fresca.</p>
+                    </div>
+                    <span class="item-preco">R$ 14,00</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Limonada Suíça Especial</span>
+                        <p class="item-descricao">Limão tahiti com leite condensado e gelo picado.</p>
+                    </div>
+                    <span class="item-preco">R$ 12,50</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Vinho Tinto Reserva Malbec (Taça)</span>
+                        <p class="item-descricao">Vinho encorpado com notas de ameixa e especiarias (150ml).</p>
+                    </div>
+                    <span class="item-preco">R$ 28,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Sobremesas -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Sobremesas</h2>
+            <div class="lista-itens">
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Petit Gâteau com Sorvete de Baunilha</span>
+                        <p class="item-descricao">Bolo quente de chocolate belga recheado com calda cremosa, servido com sorvete artesanal.</p>
+                    </div>
+                    <span class="item-preco">R$ 26,00</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Torta Cheesecake de Frutas Amarelas</span>
+                        <p class="item-descricao">Base crocante de biscoito, creme leve de queijo e coulis de manga e maracujá.</p>
+                    </div>
+                    <span class="item-preco">R$ 22,00</span>
+                </div>
+                <div class="item-prato">
+                    <div class="item-detalhes">
+                        <span class="item-nome">Tiramisù Tradicional</span>
+                        <p class="item-descricao">Camadas de biscoito champanhe embebido em café e licor, intercaladas com creme de mascarpone e cacau.</p>
+                    </div>
+                    <span class="item-preco">R$ 24,00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
